@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declarar arreglo
+        string[] NombreDeEmpleados = { "Juan Pérez", "Braley Cedeño", "Angel Gabriel", "wali Jimenez", "Juan Carlos Reyes" };
+        string[] NombreDeDepartamentos = { "Contabilidad", "Recursos Humanos", "Ventas", "Calidad", "Almacen" };
+
+        // combinacion de arreglo
+        string[] combinados = new string[NombreDeEmpleados.Length];
+
+        // Unir 
+        for (int i = 0; i < NombreDeEmpleados.Length; i++)
+        {
+            combinados[i] = NombreDeEmpleados[i] + " - " + NombreDeDepartamentos[i];
+        }
+
+        // Imprimir el resultado
+        Console.WriteLine("Lista de empleados con su departamento:");
+        foreach (var item in combinados)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
